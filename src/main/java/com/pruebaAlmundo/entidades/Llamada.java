@@ -51,7 +51,7 @@ public class Llamada implements Runnable {
 		dispatchercache = dis;
 	}
 	
-	
+	@Override
 	public void run() {
 		this.setEstadoLlamada(EstadoLlamada.EN_CURSO);
 		System.out.println("Llamada "+ this.numLlamadaEntrante + " iniciada por "+this.empleadoAtiende.getNombre());

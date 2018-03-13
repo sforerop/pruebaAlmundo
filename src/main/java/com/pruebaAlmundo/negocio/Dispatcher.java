@@ -37,6 +37,7 @@ public class Dispatcher {
 				contestarLlamada(empDisp, llamadaEntrante);
 			}
 		} else {
+			llamadasEnEspera.offer(llamadaEntrante);
 			System.out.println("Maximo de llamadas disponibles");
 			// logger.log(Level.INFO, "Maximo de llamadas disponibles");
 		}

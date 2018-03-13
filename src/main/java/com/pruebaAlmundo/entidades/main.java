@@ -36,14 +36,18 @@ public class main {
 		llamadas.add(new Llamada("14", EstadoLlamada.ENTRANTE));
 		llamadas.add(new Llamada("15", EstadoLlamada.ENTRANTE));
 		List<Empleado> emps = new LinkedList<>();
-		Empleado e1 = new Empleado("Sergio", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE);
-		Empleado e2 = new Empleado("Esteban", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE);
-		Empleado e3 = new Empleado("Forero", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE);
-		Empleado e4 = new Empleado("Pinzon", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE);
-		emps.add(e1);
-		emps.add(e2);
-		emps.add(e3);
-		emps.add(e4);
+		emps.add(new Empleado("Sergio", TipoEmpleado.DIRECTOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("Esteban", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("Forero", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("Pinzon", TipoEmpleado.SUPERVISOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("daniel", TipoEmpleado.SUPERVISOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("carlos", TipoEmpleado.DIRECTOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("manuel", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("pedro", TipoEmpleado.SUPERVISOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("francisco", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("pablo", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("alvaro", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		emps.add(new Empleado("miguel", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
 		Dispatcher inicio = new Dispatcher();
 		inicio.iniciarListaEmpleados(emps);
 		for (Llamada llamada : llamadas) {
