@@ -48,6 +48,7 @@ public class main {
 		emps.add(new Empleado("pablo", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
 		emps.add(new Empleado("alvaro", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
 		emps.add(new Empleado("miguel", TipoEmpleado.OPERADOR, EstadoEmpleado.DISPONIBLE));
+		
 		Dispatcher inicio = new Dispatcher();
 		inicio.iniciarListaEmpleados(emps);
 		for (Llamada llamada : llamadas) {

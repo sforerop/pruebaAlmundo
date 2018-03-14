@@ -1,9 +1,10 @@
 package com.pruebaAlmundo.entidades;
 
 /**
+ * Clase que contiene los atributos de los empleados del Call center
  * 
+ * @version 1.0
  * @author Sergio Forero
- *
  */
 public class Empleado {
 
